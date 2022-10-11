@@ -4,14 +4,12 @@ import { useSelector } from "react-redux";
 import { selectUser } from "../../features/userSlice";
 import "./Sidebar.css";
 import SidebarStats from "./SidebarStats";
-// import useDetectKeyboardOpen from "use-detect-keyboard-open";
 
 function Sidebar() {
+  // get user state from redux-store
   const user = useSelector(selectUser);
-  // const isKeyboardOpen = useDetectKeyboardOpen();
 
-  // console.log(isKeyboardOpen);
-
+  // Create a function that returns a a jsx component passing in topic as argument
   const recentItems = (topic) => (
     <div className="sidebar_recentItems">
       <span className="sidebar_hash">#</span>
