@@ -2,12 +2,12 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
 import { login, logout, selectUser } from "./features/userSlice";
-import Feed from "./Feed";
-import { auth } from "./Firebase";
-import Header from "./Header";
-import Login from "./Login";
-import Sidebar from "./Sidebar";
-import Widgets from "./Widgets";
+import Feed from "./components/Feed/Feed";
+import { auth } from "./components/Firebase";
+import Header from "./components/Header/Header";
+import Login from "./components/Login/Login";
+import Sidebar from "./components/SideBar/Sidebar";
+import Widgets from "./components/Widgets/Widgets";
 
 function App() {
   const user = useSelector(selectUser);

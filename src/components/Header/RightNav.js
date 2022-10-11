@@ -7,8 +7,8 @@ import ChatIcon from "@material-ui/icons//Chat";
 import NotificationIcon from "@material-ui/icons//Notifications";
 import "./Header.css";
 import { useDispatch, useSelector } from "react-redux";
-import { logout, selectUser } from "./features/userSlice";
-import { auth } from "./Firebase";
+import { logout, selectUser } from "../../features/userSlice";
+import { auth } from "../Firebase";
 
 function RightNav() {
   const user = useSelector(selectUser);

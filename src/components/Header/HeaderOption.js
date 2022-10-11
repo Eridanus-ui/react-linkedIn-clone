@@ -2,7 +2,7 @@ import React from "react";
 import "./HeaderOptions.css";
 import Avatar from "@material-ui/core/Avatar";
 import { useSelector } from "react-redux";
-import { selectUser } from "./features/userSlice";
+import { selectUser } from "../../features/userSlice";
 
 function HeaderOption({ avatar, Icon, title, onClick }) {
   const user = useSelector(selectUser);

@@ -9,10 +9,10 @@ import { useState, React, useEffect } from "react";
 import "./Feed.css";
 import InputOption from "./InputOption";
 import Post from "./Post";
-import { db } from "./Firebase";
+import { db } from "../Firebase";
 import firebase from "firebase/compat/app";
 import { useSelector } from "react-redux";
-import { selectUser } from "./features/userSlice";
+import { selectUser } from "../../features/userSlice";
 import FlipMove from "react-flip-move";
 
 function Feed() {
@@ -59,6 +59,7 @@ function Feed() {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
+              placeholder="start typing..."
             />
             <button type="submit" onClick={sendPost}>
               Send
