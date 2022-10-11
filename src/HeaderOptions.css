@@ -1,0 +1,31 @@
+.headerOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: gray;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.headerOptions_title {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.headerOptions_icon{
+    object-fit: contain;
+    height: 25px !important;
+    width: 25px !important;
+}
+
+.headerOptions:hover {
+    color: black;
+}
+
+@media screen and (max-width: 800px) {
+    .headerOptions {
+        margin-right: 12px;
+    }
+}

@@ -1,0 +1,39 @@
+.post {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.post_header {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.post_info {
+    margin-left: 10px;
+}
+
+.post_info > h2 {
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.post_body {
+    overflow-wrap: anywhere;
+}
+
+.post_body > p {
+    font-family: sans-serif;
+}
+
+.post_button {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 800px) {
+    .post_header {
+        place-content: flex-start;
+    }
+}
