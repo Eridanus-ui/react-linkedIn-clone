@@ -6,12 +6,12 @@ import BusinessCenterIcon from "@material-ui/icons//BusinessCenter";
 import ChatIcon from "@material-ui/icons//Chat";
 import NotificationIcon from "@material-ui/icons//Notifications";
 import "./Header.css";
-import { useDispatch } from "react-redux";
-import { logout } from "./features/userSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { logout, selectUser } from "./features/userSlice";
 import { auth } from "./Firebase";
 
 function RightNav() {
-  // const user = useSelector(selectUser);
+  const user = useSelector(selectUser);
 
   const dispatch = useDispatch();
   const logOutOfApp = () => {
@@ -32,7 +32,7 @@ function RightNav() {
       <HeaderOption Icon={NotificationIcon} title="Notifications" />
       <HeaderOption
         avatar="images/avatar.jpg"
-        title="Me"
+        title={user ? "LogOut" : "Me"}
         className="image_title"
         onClick={logOutOfApp}
       />
