@@ -116,5 +116,7 @@
   }
   .sidebar_stat {
     display: none;
+    padding: 0;
+    margin-bottom: 0;
   }
 }
